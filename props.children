@@ -1,0 +1,28 @@
+import React from 'react';
+
+function App() {
+  return (
+    <div>
+      <ChildComponent name={'aryav'}>
+        <h1>my name is aryav</h1>
+        <h1>my name is aryav</h1>
+        <h1>my name is aryav</h1>
+        <h1>my name is aryav</h1>
+        <h1>my name is aryav</h1>
+
+      </ChildComponent>
+    </div>
+  );
+}
+export default App
+
+function ChildComponent(props) {
+  // pass down any additional props to the child components
+  return (
+    <div>
+      <p>This is a child component</p>
+      {props.name}
+      {props.children}
+    </div>
+  );
+}
